@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./app/shared/style/variables.scss";
+// @import "./app/shared/style/variables.scss";
+@use "./app/shared/style/variables.scss";
+@use "./app/shared/style/rem-calc.scss";
 
 $primary-color: #af7eeb;
 $secondary-color: #939cbd;
@@ -31,5 +33,17 @@ body {
   margin: 50px auto;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  background-color: var(--primary-color);
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+main {
+  max-width: rem-calc(600);
+  margin: 0 auto;
+  box-sizing: border-box;
+}

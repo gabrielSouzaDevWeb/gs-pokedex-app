@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-$primary-color: #af7eeb;
-$secondary-color: #939cbd;
+$primary-color: var(--primary-color);
+$white: var(--white);
+$secondary-color: var(--secondary-color);
 $tertiary-color: #ffffff;
 
-$primary-background-color: #e3e9ff;
+$primary-background-color: #07090c;
 $secondary-background-color: $tertiary-color;
 $tertiary-background-color: $primary-color;
 
@@ -13,3 +14,9 @@ $secondary-text-color: $tertiary-color;
 
 $danger-color: #ff002e;
 $succes-color: rgb(5, 200, 5);
+
+:root {
+  --white: #fff;
+  --primary-color: #262835;
+  --secondary-color: #ff5473;
+}
